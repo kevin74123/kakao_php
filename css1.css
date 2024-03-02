@@ -1,0 +1,72 @@
+.wrap{
+    width: 700px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50% ,0);
+}
+
+.box1{
+    background-color: white;
+    height: auto;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+    border: rgb(187, 187, 187) solid 1px;
+}
+
+.box2{
+    margin-top: 10px;
+    background-color: white;
+    height: auto;
+    border-radius: 10px;
+    border: rgb(187, 187, 187) solid 1px;
+}
+
+
+.a{
+    height: 10px;
+    background-color: rgb(108, 34, 177);
+    border-start-end-radius: 10px;
+    border-start-start-radius: 10px;
+}
+
+.kakao{
+    text-align: left;
+    font-size: 35px;
+    padding: 15px;
+    font-weight: 400;
+}
+
+.kakao2{
+    font-weight: 700;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.안내문{
+    text-align: left;
+    margin-left: 30px;
+}
+
+.po{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+hr{
+    opacity: 0.5;
+}
+.필수사항{
+    color: red;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.redcolor{
+    color: red;
+}
+
+.true{
+    margin: 20px;
+}

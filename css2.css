@@ -1,0 +1,111 @@
+.wrap{
+    width: 700px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50% ,0);
+}
+.kakao{
+    text-align: left;
+    font-size: 35px;
+    padding: 15px;
+    font-weight: 500;
+}
+.a{
+    height: 10px;
+    background-color: rgb(108, 34, 177);
+    border-start-end-radius: 10px;
+    border-start-start-radius: 10px;
+}
+
+.b{
+    height: auto;
+    margin-top: 10px;
+
+    background-color: rgb(108, 34, 177);
+    border-start-end-radius: 10px;
+    border-start-start-radius: 10px;
+}
+
+.box1{
+    background-color: white;
+    height: auto;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+    border: rgb(187, 187, 187) solid 1px;
+}
+
+.box3{
+    margin-top: 10px;
+    background-color: white;
+    height: auto;
+    border-radius: 10px;
+    border: rgb(187, 187, 187) solid 1px;
+}
+
+.필수사항{
+    color: red;
+    text-align: left;
+    margin: 30px;
+}
+
+.안내문{
+    text-align: left;
+    margin-left: 30px;
+}
+
+.po{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+        .redcolor{
+    color: red;
+}
+.kakao2{
+    font-weight: 700;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.kakao3{
+    font-weight: 700;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.namebar{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -webkit-box-direction: normal;
+    word-wrap: break-word;
+    -webkit-tap-highlight-color: transparent;
+    unicode-bidi: isolate;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: transparent;
+
+    display: block;
+    font: 400 16px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    height: 24px;
+    min-width: 0%;
+    padding: 0;
+    z-index: 0;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    line-height: 20px;
+    color: rgb(32,33,36);
+    line-height: 20px;
+}
+.true{
+    margin: 20px;
+}
+
+
+.img{
+    padding: 20px;
+}

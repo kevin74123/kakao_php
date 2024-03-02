@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>카카오택시 모집(개발)</title>
+
+            <script>
+                
+                    function hangul(){
+
+                    if((event.keyCode < 12592) || (event.keyCode > 12687)){
+
+                        alert("한글만 입력이 가능합니다.");
+
+                        event.returnValue = false
+
+                    }
+
+                    }    
+                function vaildateForm(){
+                    var textbox1 = document.getElementById('namebox').value;
+                    var textbox2 = document.getElementById('numberbox').value;
+                    var textbox3 = document.getElementById('nynmndbox').value;
+                    var radio1 = document.querySelector('input[name="1"]:checked');
+                    var radio2 = document.querySelector('input[name="2"]:checked');
+                    var radio3 = document.querySelector('input[name="3"]:checked');
+                    
+                    if ( textbox1 && textbox2 && textbox3 && radio1 && radio2 && radio3 ) {
+                        alert('성공');
+                        location.href = "index3.php";
+                        return true;
+
+                    } else {
+                        alert('모두 선택해주세요');
+                        return false;
+                    }
+                }
+
+
+            </script>
+            <link rel="stylesheet" href="./css2.css">
+        </head>
+
+        <body bgcolor="#F0EBF8">
+            <div class="wrap">
+                
+                <div class="a"><br></div>
+
+                <div class="box1">
+                    <div class="kakao">
+                        [카카오 T 제휴 법인택시회사] T 크루 모집 접수
+                    </div>
+                    <div class="필수사항">
+                        *필수항목
+                    </div>
+                </div>
+
+                <div class="b">
+                    <div style="padding:15px; color: white;">[카카오 T 제휴 법인택시회사] 모집 접수</div>
+                </div>
+
+                <div class="box1">
+                    <div class="po">
+                        아래의 항목을 빈칸없이 예시에 맞춰 작성 부탁드립니다. 입력하신 정보가 불확실한 경우 원활<br>
+                        한 안내가 어려울 수 있습니다. <br>
+                            <div style="margin-top: 20px; margin-bottom: 20px;">
+                                접수하신 내용을 토대로 채용 안내처에서 접수 확인 메시지를 보내드립니다. 
+                            </div>
+
+                    </div>
+                </div>
+
+
+
+                <form action="index3.php" onsubmit="vaildateForm(); return false;" method="post">
+                    <div class="box3">
+                        <div class="kakao2">이름<span class="redcolor">*</span></div>
+                        <div class="kakao3">예시 홍길동</div>
+                        <input onKeyPress="hangul();" type="text" class="namebar" name="name" minlength="2" maxlength="4" required>
+                    </div>
+
+                    <div class="box3">
+                        <div class="kakao2">휴대폰 번호<span class="redcolor">*</span></div>
+                        <div class="kakao3">예시 01012345678</div>
+                        <label>
+                            <input pattern="[0-9]+" type="text" class="namebar" name="numberbox" minlength="1" maxlength="11"required>
+                        </label>
+                    </div>
+
+                    <div class="box3">
+                        <div class="kakao2">생년월일<span class="redcolor">*</span></div>
+                        <div class="kakao3">예시 750720</div>
+                        <input pattern="[0-9]+" type="text" class="namebar" name="nynmndbox" minlength="1" maxlength="6"required>
+                    </div>
+
+                    <div class="box3">
+                        <div class="kakao2">택시면허 보유 여부 (핸재 기준)<span class="redcolor">*</span></div>
+                        <div class="true">
+                            <input type="radio" name="3" value="보유">보유
+                            <input type="radio" name="3" value="미보유">미보유
+                        </div>
+                            
+                    </div>
+
+                    <div class="box3">
+                        <div class="kakao2">택시회사 경력 여부<span class="redcolor">*</span></div>
+                        <div class="true">
+                            <input type="radio" name="2" value="있음"> 있음
+                        </div>
+                        <div class="true">
+                            <input type="radio" name="2" value="없음"> 없음
+                        </div>
+                            
+                    </div>
+
+                    <div class="box3">
+                        <div class="kakao2">택시면허 보유 또는, 취득 예정 지역
+                            <span class="redcolor">*</span></div>
+                            <div class="kakao3">*보유 또는, 취득 예정이신 면허 지역을 선택해주세요. 지역에 따라 택시회사 배정이 지연될<br>
+                                수 있습니다. (서울, 일부 경기, 광주광역시, 대구광역시 채용 중)</div>
+                        <div class="true">
+                            <input type="radio" name="1" value="서울"> 서울
+                        </div>
+                        <div class="true">
+                            <input type="radio" name="1" value="경기"> 경기
+                        </div>
+                        <div class="true">
+                            <input type="radio" name="1" value="인천"> 인천
+                        </div>
+                        <div class="true">
+                            <input type="radio" name="1" value="광주광역시"> 광주광역시
+                        </div>
+                        <div class="true">
+                            <input type="radio" name="1" value="대구광역시"> 대구광역시
+                        </div>
+                        <div class="true">
+                            <input type="radio" name="1" value="기타"> 기타:<input type="text" class="namebar" name="etc">
+                        </div>
+
+                    </div>
+                
+
+
+
+                    <div class="box3">
+                        <div class="kakao2">지역별 채용 현황 (그 외 지역은 아직 채용이 진행되고 있지 않습니다.) *20년 7월 기
+                            <br>준</div>
+                            <div class="img">
+                                <img src="./스크린샷 2020-07-20 오후 1.33.18.png" style="width: 100%;">
+                            </div>
+                            
+                    </div>
+                    <div style="margin-top: 10px; height: 50px;">
+                        <button type="submit" style="background-color: white; float: left; border-radius: 5px; ">다음페이지로 이동</button>
+            
+                        <div style="float: left; margin-top: 10px; transform: translate(70%, 0);">
+                            <progress value="40" max="100"></progress> 2/6 페이지
+                        </div>
+
+                        
+                        <button type="reset" style="background-color: white; float: right; border-radius: 5px; ">양식 지우기</button>
+                    
+                    </div>
+                    <div style="text-align: left; margin-top: 10px; font-size: 15px;">
+                        Google Forms를 통해 비밀번호를 제출하지 마세요.
+                    </div>
+                    <div style="text-align: center; margin-top: 10px; font-size: 15px;">
+                        이 설문지는 카카오모빌리티 내부에서 생성되었습니다. 악용사례 신고
+                    </div>
+                    <div style="text-align: center; margin-top: 10px; font-size: 30px; opacity: 0.5;">
+                        <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_dark_clr_74x24px.svg" > 설문지    
+                    </div>
+                </form>
+            </div>
+        </body>
+    </html>
